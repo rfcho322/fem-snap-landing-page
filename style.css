@@ -351,7 +351,6 @@ ul {
         padding-block: 50px;
         padding-inline: 150px;
         gap: 5rem;
-        transition: all 0.5s ease;
     }
     .hero__header {
         display: flex;
