@@ -1,4 +1,4 @@
-# Frontend Mentor - Intro section with dropdown navigation solution
+# Frontend Mentor - SNAP landing page with intro section dropdown navigation solution
 
 This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5).
 
@@ -44,8 +44,8 @@ Users should be able to:
 
 ### Links
 
-- Frontend Mentor solution URL: [Intro Section with Dropdown Navigation Solution]()
-- Live Site URL: [Intro Section with Dropdown Navigation Live Website]()
+- Frontend Mentor solution URL: [Intro Section with Dropdown Navigation Solution](https://www.frontendmentor.io/solutions/snap-landing-page-semantic-html5-markup-css-and-javascript-01fiSKRlVr)
+- Live Site URL: [Intro Section with Dropdown Navigation Live Website](https://rfcho322.github.io/fem-snap-landing-page/)
 
 ## My process
 
