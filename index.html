@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="images/ss-desktop.png">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- CUSTOM STYLES -->
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="sidebar-overlay"></div>
+    <header class="main-header">
+      <div class="container">
+        <!-- BRAND LOGO -->
+        <a href="#" class="header-logo" aria-label="brand logo">
+          <svg width="84" height="27">
+            <use href="images/logo.svg#header-logo"></use>
+          </svg>
+        </a>
+        <!-- TOP NAVIGATION-->
+        <nav class="top-nav" role="menu">
+          <ul class="nav-list" aria-label="primary list">
+            <!-- DROPDOWN -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle | text-gray" id="dropdownMenuBtn1" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                Features 
+                <svg width="10" height="6" class="dropdown-icon" aria-label="dropdown icon">
+                  <use href="images/icon-arrow-down.svg#icon-arrow-down"></use>
+                </svg>
+              </a>
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuBtn1" role="menu">
+                <div class="dropdown-item">
+                  <svg width="21" height="24" class="dropdown-item__icon">
+                      <use href="images/icon-todo.svg#todo-icon"></use>
+                  </svg>
+                  <a href="#TodoList" class="text-gray" role="menuitem" aria-label="Todo List">Todo List</a>
+                </div>
+                <div class="dropdown-item">
+                  <svg width="21" height="24" class="dropdown-item__icon">
+                    <use href="images/icon-calendar.svg#calendar-icon"></use>
+                  </svg>
+                  <a href="#Calendar" class="text-gray" role="menuitem" aria-label="Calendar">Calendar</a>
+                </div>
+                <div class="dropdown-item">
+                  <svg width="21" height="24" class="dropdown-item__icon">
+                    <use href="images/icon-reminders.svg#reminders-icon"></use>
+                  </svg>
+                  <a href="#Reminders" class="text-gray" role="menuitem" aria-label="Reminders">Reminders</a>
+                </div>
+                <div class="dropdown-item">
+                  <svg width="21" height="24" class="dropdown-item__icon">
+                    <use href="images/icon-planning.svg#planning-icon"></use>
+                  </svg>
+                  <a href="#Planning" class="text-gray" role="menuitem" aria-label="Planning">Planning</a>
+                </div>
+              </div>
+            </li> <!-- END OF DROPDOWN -->
+            <!-- DROPDOWN -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle | text-gray" id="dropdownMenuBtn2" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                Company 
+                <svg width="10" height="6" class="dropdown-icon">
+                  <use href="images/icon-arrow-down.svg#icon-arrow-down"></use>
+                </svg>
+              </a>
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuBtn2" role="menu">
+                <div class="dropdown-item">
+                  <a href="#History" class="text-gray" role="menuitem" aria-label="History">History</a>
+                </div>
+                <div class="dropdown-item">
+                  <a href="#OurTeam" class="text-gray" role="menuitem" aria-label="Our Team">Our Team</a>
+                </div>
+                <div class="dropdown-item">
+                  <a href="#Blog" class="text-gray" role="menuitem" aria-label="Blog">Blog</a>
+                </div>
+              </div>
+            </li> <!-- END OF DROPDOWN -->
+            <li>
+              <a href="#Careers" class="text-gray" role="menuitem" aria-label="Careers">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a href="#About" class="text-gray" role="menuitem" aria-label="About">
+                About
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- HEADER BUTTONS -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-filled-light">Login</button>
+        <button type="button" class="btn btn-outlined-light">Register</button>
+      </div>
+      
+      <!-- SIDEBAR NAVIGATION -->
+      <div class="sidebar-nav" role="menu">
+        <!-- HAMBURGER MENU BUTTON -->
+        <a href="#" class="sidebar-nav__btn" role="button" aria-controls="sidebar-menu" aria-label="open menu" aria-haspopup="true" aria-expanded="false">
+          <svg width="32" height="18">
+            <use href="images/icon-menu.svg#menu-icon"></use>
+          </svg>
+        </a>
+        <!-- SIDEBAR MENU -->
+        <div class="sidebar-menu" id="sidebar-menu" role="menu">
+          <a href="#" class="sidebar-menu__close" role="button">
+            <svg width="26" height="26">
+              <use href="images/icon-close-menu.svg#close-menu-icon"></use>
+            </svg>
+          </a>
+          <!-- SIDEBAR DROPDOWN -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle | text-gray" id="dropdownMenuBtn3" role="menuitem" aria-haspopup="true" aria-expanded="false">
+              Features 
+              <svg width="10" height="6" class="dropdown-icon" aria-label="arrow icon">
+                <use href="images/icon-arrow-down.svg#icon-arrow-down"></use>
+              </svg>
+            </a>
+            <!-- SIDEBAR DROPDOWN MENU -->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuBtn3" role="menu">
+              <div class="dropdown-item">
+                <svg width="21" height="24" class="dropdown-item__icon">
+                    <use href="images/icon-todo.svg#todo-icon"></use>
+                </svg>
+                <a href="#TodoList" class="text-gray" role="menuitem" aria-label="Todo List">Todo List</a>
+              </div>
+              <div class="dropdown-item">
+                <svg width="21" height="24" class="dropdown-item__icon">
+                  <use href="images/icon-calendar.svg#calendar-icon"></use>
+                </svg>
+                <a href="#Calendar" class="text-gray" role="menuitem" aria-label="Calendar">Calendar</a>
+              </div>
+              <div class="dropdown-item">
+                <svg width="21" height="24" class="dropdown-item__icon">
+                  <use href="images/icon-reminders.svg#reminders-icon"></use>
+                </svg>
+                <a href="#Reminders" class="text-gray" role="menuitem" aria-label="Reminders">Reminders</a>
+              </div>
+              <div class="dropdown-item">
+                <svg width="21" height="24" class="dropdown-item__icon">
+                  <use href="images/icon-planning.svg#planning-icon"></use>
+                </svg>
+                <a href="#Planning" class="text-gray" role="menuitem" aria-label="Planning">Planning</a>
+              </div>
+            </div>
+          </div><!-- END OF SIDEBAR DROPDOWN -->
+          <!-- SIDEBAR DROPDOWN -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle | text-gray" id="dropdownMenuBtn4" role="menuitem" aria-haspopup="true" aria-expanded="false">
+              Company 
+              <svg width="10" height="6" class="dropdown-icon" aria-label="arrow icon">
+                <use href="images/icon-arrow-down.svg#icon-arrow-down"></use>
+              </svg>
+            </a>
+            <!-- SIDEBAR DROPDOWN MENU -->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuBtn4" role="menu">
+              <div class="dropdown-item">
+                <a href="#History" class="text-gray" role="menuitem" aria-label="History">History</a>
+              </div>
+              <div class="dropdown-item">
+                <a href="#OurTeam" class="text-gray" role="menuitem" aria-label="Our Team">Our Team</a>
+              </div>
+              <div class="dropdown-item">
+                <a href="#Blog" class="text-gray" role="menuitem" aria-label="Blog">Blog</a>
+              </div>
+            </div>
+          </div> <!-- END OF SIDEBAR DROPDOWN -->
+          <a href="#Careers" class="text-gray" role="menuitem" aria-label="Careers">
+            Careers
+          </a>
+          <a href="#About" class="text-gray" role="menuitem" aria-label="About">
+            About
+          </a>
+          <!-- SIDEBAR BUTTONS -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-filled-light btn-block">Login</button>
+            <button type="button" class="btn btn-outlined-light btn-block">Register</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero | text-center">
+        <!-- HERO IMAGE -->
+        <div class="hero__image">
+          <img src="images/image-hero-mobile.png" alt="hero image">
+        </div>
+        <!-- HERO CONTENT -->
+        <div class="hero__header">
+          <div class="primary-header">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.</p>
+            <button type="button" class="primary-header__btn | btn btn-filled-dark fw-700">Learn more</button>
+          </div>
+          <!-- CLIENT LOGOS -->
+          <div class="client-list" aria-label="client logos">
+            <svg class="client-logo" id="logo-databiz" aria-label="databiz">
+              <use href="images/clients-logos.svg#logo-databiz"></use>
+            </svg>
+            <svg class="client-logo" id="logo-audiophile" aria-label="audiophile">
+              <use href="images/clients-logos.svg#logo-audiophile"></use>
+            </svg>
+            <svg class="client-logo" id="logo-meet" aria-label="meet">
+              <use href="images/clients-logos.svg#logo-meet"></use>
+            </svg>
+            <svg class="client-logo" id="logo-maker" aria-label="maker">
+              <use href="images/clients-logos.svg#logo-maker"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer | text-center">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#" role="navigation" aria-label="source code link" target="_blank">rfcho322</a>.
+    </footer>
+
+  </div> <!-- END OF WRAPPER -->
+
+  <script src="script.js"></script>
+</body>
+</html>
